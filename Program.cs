@@ -31,11 +31,11 @@ namespace Shell_Sort
                 {
                     int j = i + atlama;
                     temp = array[j];
-
-                   if (j - atlama >= 0 && temp < array[j - atlama])
+                    
+                   if (i>= 0 && temp < array[i])
                     {
-                        array[j] = array[j - atlama];
-                        j = j - atlama;
+                        array[j] = array[i];
+                        j = i;
                     }
 
                     array[j] = temp;
